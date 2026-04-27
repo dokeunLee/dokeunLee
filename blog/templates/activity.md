@@ -1,7 +1,7 @@
 ---
 slug: TEMPLATE-activity
 title: "[Template] 단체 활동·학회 참가 회고"
-authors: [dogeun]
+authors: [dokeun]
 tags: [단체활동]
 draft: true
 ---

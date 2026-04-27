@@ -13,13 +13,14 @@ const config = {
     v4: true,
   },
 
-  // GitHub Pages 배포 기준: https://dokeunLee.github.io/dokeunLee/
+  // GitHub Pages User Site: 레포 이름이 'dokeunLee.github.io' 라야 루트로 서빙됨.
+  // 결과 URL: https://dokeunLee.github.io
   url: 'https://dokeunLee.github.io',
-  baseUrl: '/dokeunLee/',
+  baseUrl: '/',
   trailingSlash: false,
 
   organizationName: 'dokeunLee',
-  projectName: 'dokeunLee',
+  projectName: 'dokeunLee.github.io',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'warn',
@@ -85,7 +86,7 @@ const config = {
     ({
       image: 'img/og-card.png',
       metadata: [
-        {name: 'author', content: '이도근 (Lee Dogeun)'},
+        {name: 'author', content: '이도근 (Lee Dokeun)'},
         {name: 'keywords', content: '석사과정, 학습 기록, 논문 정리, 회고, Docusaurus'},
         {property: 'og:locale', content: 'ko_KR'},
         {name: 'twitter:card', content: 'summary_large_image'},
@@ -97,7 +98,7 @@ const config = {
       navbar: {
         title: '이도근',
         logo: {
-          alt: 'Lee Dogeun',
+          alt: 'Lee Dokeun',
           src: 'img/logo.svg',
         },
         items: [
@@ -140,7 +141,7 @@ const config = {
             ],
           },
         ],
-        copyright: `© ${new Date().getFullYear()} 이도근 (Lee Dogeun). Built with Docusaurus.`,
+        copyright: `© ${new Date().getFullYear()} 이도근 (Lee Dokeun). Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

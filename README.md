@@ -10,12 +10,10 @@
 
 ```bash
 npm install     # 패키지 설치 (최초 1회)
-npm start       # 개발 서버 (http://localhost:3000/dokeunLee/)
+npm start       # 개발 서버 (http://localhost:3000)
 ```
 
 `npm start`로 띄워두면 파일 수정할 때마다 브라우저가 알아서 새로고침 됨. 글 쓸 땐 항상 이거 켜놓고 작업하는 게 좋을 거 같음.
-
-> **주의:** baseUrl이 `/dokeunLee/`라 로컬 주소도 `localhost:3000/dokeunLee/`야. 그냥 `localhost:3000` 들어가면 404 나니까 슬래시 끝까지 붙여야 해.
 
 자주 쓰는 명령어:
 
@@ -363,12 +361,20 @@ npm start
 
 1. 우분투 러너에서 `npm ci` → `npm run build`
 2. `build/` 폴더를 GitHub Pages 아티팩트로 업로드
-3. `https://dokeunLee.github.io/dokeunLee/` 로 배포
+3. **`https://dokeunLee.github.io`** 로 배포 (루트 도메인)
 
 ### 처음 1번만 — Repository 설정
 
-1. GitHub에 레포 만들기. **레포 이름은 반드시 `dokeunLee`** (이게 baseUrl과 일치해야 함)
-2. `git init && git remote add origin git@github.com:dokeunLee/dokeunLee.git`
+1. GitHub에 레포 만들기. **레포 이름은 반드시 `dokeunLee.github.io`**
+   → 이게 GitHub Pages "User site" 규칙. 본인 username 그대로 + `.github.io` 붙은 레포는 자동으로 루트 도메인 (`https://dokeunLee.github.io`) 으로 서빙됨.
+   → 레포 이름이 다르면 (예: `dokeunLee`) `https://dokeunLee.github.io/dokeunLee/` 같은 서브경로로 떨어져.
+2. 로컬에서 git 초기화하고 원격 연결:
+
+   ```bash
+   git init
+   git remote add origin git@github.com:dokeunLee/dokeunLee.github.io.git
+   ```
+
 3. **Settings → Pages** 들어가서:
    - **Source**: `GitHub Actions` 선택 (gh-pages 브랜치 말고)
 4. 첫 push:
@@ -381,7 +387,7 @@ npm start
    ```
 
 5. Actions 탭에서 워크플로우 돌아가는 거 확인. 1~2분 걸려.
-6. Settings → Pages 다시 가면 배포된 URL 떠.
+6. Settings → Pages 다시 가면 배포된 URL 떠 — 정상이면 `https://dokeunLee.github.io`.
 
 ### 그 다음부터는
 
@@ -393,16 +399,19 @@ git push
 
 → 5초 안에 액션 시작, 1~2분 뒤 사이트 갱신. 끝.
 
-### 배포 도메인 바꾸고 싶으면
+### 만약 레포 이름을 `dokeunLee.github.io` 로 못 만들 경우 (이미 같은 이름의 레포가 있다거나)
 
-[docusaurus.config.js](docusaurus.config.js) 위쪽:
+[docusaurus.config.js](docusaurus.config.js) 위쪽을 다음과 같이 바꿔:
 
 ```js
 url: 'https://dokeunLee.github.io',
-baseUrl: '/dokeunLee/',
+baseUrl: '/실제레포이름/',
+projectName: '실제레포이름',
 ```
 
-커스텀 도메인 (예: `lee.dev`) 쓰면:
+이렇게 하면 `https://dokeunLee.github.io/실제레포이름/` 으로 서빙돼.
+
+### 커스텀 도메인 (예: `lee.dev`) 쓰고 싶으면
 
 ```js
 url: 'https://lee.dev',

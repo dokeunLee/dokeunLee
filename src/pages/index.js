@@ -105,7 +105,7 @@ function TimelineSection() {
       <div className="container">
         <div className={styles.sectionHeader}>
           <h2>Timeline</h2>
-          <p>간단한 이력. 자세한 내용은 향후 Blog · Docs로 채워나갑니다.</p>
+          <p>간단한 이력. 자세한 내용은 향후 Blog · Docs로 채워갑니다.</p>
         </div>
         <div className={styles.timeline}>
           {profile.timeline.map((it) => (
@@ -193,7 +193,7 @@ function BlogSection() {
       <div className="container">
         <div className={styles.sectionHeader}>
           <h2>Records — 무엇을 경험했는가</h2>
-          <p>발표·세미나·해커톤·학회 등 그날의 경험을 회고로 남깁니다.</p>
+          <p>발표·세미나·해커톤·학회 등 그날의 경험을 회고로 남김.</p>
         </div>
         <div className={styles.cardGrid}>
           {blogCards.map((c) => (
@@ -215,21 +215,19 @@ function HowSection() {
       <div className="container">
         <div className={styles.sectionHeader}>
           <h2>어디에 무엇을 쓰지?</h2>
-          <p>판단 기준은 단 하나 — 나중에 다시 찾아볼 가치가 있는 지식인가.</p>
+          <p>나중에 다시 찾아볼 가치가 있는 지식인가.</p>
         </div>
         <div className={styles.howRow}>
           <div className={styles.howBlock}>
             <h3>📚 Docs</h3>
             <p>
               재사용 가능한 지식. 논문 요약, 강의 정리, 기술 노트.
-              템플릿을 복사해 시작하면 형식 고민이 사라집니다.
             </p>
           </div>
           <div className={styles.howBlock}>
             <h3>📝 Blog</h3>
             <p>
               그날의 경험과 결정. 발표·세미나·해커톤·학회 회고.
-              빠르게 적고 미래에 패턴을 찾는 자료가 됩니다.
             </p>
           </div>
         </div>
