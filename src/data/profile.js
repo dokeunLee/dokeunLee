@@ -16,7 +16,7 @@ const profile = {
   birthYear: 2001,
 
   role: {
-    ko: '석사과정 재학 중',
+    ko: '석사과정 예정',
     en: "Master's Student",
   },
 
