@@ -199,7 +199,7 @@ function BlogSection() {
       <div className="container">
         <div className={styles.sectionHeader}>
           <h2>Records — 무엇을 경험했는가</h2>
-          <p>발표·세미나·해커톤·학회 대외활동 등 그날의 경험을 회고로 남김.</p>
+          <p>발표·세미나·해커톤·대외활동 등 그날의 경험을 회고로 남김.</p>
         </div>
         <div className={styles.cardGrid}>
           {blogCards.map((c) => (
