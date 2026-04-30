@@ -41,7 +41,7 @@ const profile = {
 
   // 메인 페이지 Timeline. 위에서부터 최신순.
   timeline: [
-  { when: '2026 –', what: '대학교 재학', sub: '' },
+  { when: '2026 –', what: '대학원 준비', sub: '' },
   { when: '2021', what: '복수전공 시작', sub: '경북대학교 컴퓨터학부 글로벌소프트웨어전공' },
   { when: '2020', what: '대학 입학', sub: '경북대학교 물리학과' },
   { when: '2017', what: '고등학교 입학', sub: '서울고등학교' },
