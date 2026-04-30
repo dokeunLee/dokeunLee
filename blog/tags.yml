@@ -27,3 +27,9 @@
   label: "회고"
   permalink: /회고
   description: "주간/월간/학기 단위 회고"
+
+대외활동:
+  label: "대외활동"
+  permalink: /대외활동
+  description: "기자단·자문단·앰버서더 등 외부 활동 기록"
+
