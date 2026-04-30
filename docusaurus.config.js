@@ -131,6 +131,7 @@ const config = {
               {label: '논문 발표', to: '/blog/tags/논문-발표'},
               {label: '세미나', to: '/blog/tags/세미나'},
               {label: '해커톤', to: '/blog/tags/해커톤'},
+              {label: '대외활동', to: '/blog/tags/대외활동'},
             ],
           },
           {
